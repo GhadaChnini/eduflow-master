@@ -1,0 +1,81 @@
+name: eduflow_app
+description: "EduFlow - Tunisian Primary School Behavioral Learning Platform"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.13.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  http: ^1.2.0
+
+  # Supabase
+  supabase_flutter: ^2.17.1
+
+  # Navigation
+  go_router: ^17.5.0
+
+  # State Management
+  flutter_riverpod: ^2.6.1
+
+  # UI
+  google_fonts: ^8.2.1
+  cached_network_image: ^3.4.1
+  flutter_svg: ^2.0.10+1
+
+  # Media
+  image_picker: ^1.2.3
+  video_player: ^2.14.0
+
+  # Storage
+  shared_preferences: ^2.5.5
+
+  # WebView
+  webview_flutter: ^4.14.1
+
+  # File handling
+  file_selector: ^1.1.0
+  dio: ^5.7.0
+  path_provider: ^2.1.4
+  flutter_pdfview: ^1.3.2
+
+  pdf: ^3.13.1
+  printing: ^5.15.1
+
+
+
+
+  video_compress: ^3.1.2
+
+  # Utils
+  intl: ^0.20.3
+  url_launcher: ^6.3.2
+  open_filex: ^4.7.0
+  firebase_core: ^4.15.0
+  firebase_messaging: ^16.7.0
+  file_picker: ^13.1.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Cairo-SemiBold.ttf
+          weight: 600
